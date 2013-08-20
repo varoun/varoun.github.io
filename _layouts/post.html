@@ -1,9 +1,25 @@
 ---
-layout: default
+layout: entry
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
-</div>
+
+<section class="post">
+    <header class="post-header">
+        <img class="post-avatar"
+             alt="Varoun's avatar" src="https://s3.amazonaws.com/static.varoun.com/images/varoun-avatar.png"
+             height="48" width="48">
+
+        <h2 class="post-title">{{ page.title }}</h2>
+            <p class="post-meta">
+            By <a class="post-author" href="#">varoun</a> on {{ page.date | date_to_string }} under 
+            {% for category in page.categories %}
+            <a class="post-category post-category-{{ category }}" href="#">{{ category }}</a>
+            {% endfor %}
+            </p>
+            
+    </header>
+
+    <div class="post-description">
+    {{ content }}
+    </div>
+</section>  
