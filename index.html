@@ -15,7 +15,7 @@ title: varoun.com
             <p class="post-meta">
             By <a class="post-author" href="#">varoun</a> under 
             {% for category in post.categories %}
-            <a class="post-category post-category-js" href="#"> {{ category }}</a>
+            <a class="post-category post-category-{{ category }}" href="#">{{ category }}</a>
             {% endfor %}
             </p>
     </header>
