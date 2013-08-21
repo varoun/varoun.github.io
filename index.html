@@ -13,7 +13,7 @@ title: varoun.com
 
         <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <p class="post-meta">
-            By <a class="post-author" href="#">varoun</a> on {{ page.date | date_to_string }} under 
+            By <a class="post-author" href="#">varoun</a> on {{ post.date | date_to_string }} under 
             {% for category in post.categories %}
             <a class="post-category post-category-{{ category }}" href="#">{{ category }}</a>
             {% endfor %}
