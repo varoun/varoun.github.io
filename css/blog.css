@@ -114,16 +114,16 @@ a:focus {
     background: #999;
     font-size: 80%;
 }
-    .post-category-design {
+    .post-category-music {
         background: #5aba59;
     }
-    .post-category-pure {
+    .post-category-essay {
         background: #4d85d1;
     }
-    .post-category-yui {
+    .post-category-tech {
         background: #8156a7;
     }
-    .post-category-js {
+    .post-category-misc {
         background: #df2d4f;
     }
 
